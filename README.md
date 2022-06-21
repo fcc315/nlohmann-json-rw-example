@@ -3,7 +3,7 @@ An example of using nlohmann lib to read/write json file in c++
 
 # Configuration
 Windows  
-nlohmann
+nlohmann  
 gcc 12.1.0  
 
 # To compile (command line)
