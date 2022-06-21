@@ -1,0 +1,54 @@
+[
+    {
+        "param": {
+            "val1": 0.0,
+            "val2": 0.0,
+            "val3": 0.0,
+            "val4": 0.0
+        },
+        "result": {
+            "rmse_mm": 0.0,
+            "rmse_pixel": 0.0
+        }
+    },
+    {
+        "id": 0,
+        "image": "0.jpg",
+        "resolution": [
+            100,
+            100
+        ]
+    },
+    {
+        "id": 1,
+        "image": "1.jpg",
+        "resolution": [
+            100,
+            100
+        ]
+    },
+    {
+        "id": 2,
+        "image": "2.jpg",
+        "resolution": [
+            100,
+            100
+        ]
+    },
+    {
+        "id": 3,
+        "image": "3.jpg",
+        "resolution": [
+            100,
+            100
+        ]
+    },
+    {
+        "id": 4,
+        "image": "4.jpg",
+        "resolution": [
+            100,
+            100
+        ]
+    }
+]
