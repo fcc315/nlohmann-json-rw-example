@@ -68,31 +68,29 @@ void readExample(string jsonFile)
 		iFile.close();
 	}
 	iFile.close();
-
+	
+	// Print out
     for (auto item : j) {
 		if (item.contains("param")) {
 			json jItem = item["param"];
 			double val = jItem["val1"];
             cout << "param::val1 is: " << val << endl;
 			val = jItem["val2"];
-            cout << "param::val1 is: " << val << endl;
-			val = jItem["val3"];
-            cout << "param::val1 is: " << val << endl;
-			val = jItem["val4"];
-            cout << "param::val1 is: " << val << endl;
+            cout << "param::val2 is: " << val << endl;
 		}
 		if (item.contains("result")) {
 			json jItem = item["result"];
 			double val = jItem["rmse_mm"];
             cout << "param::rmse_mm is: " << val << endl;
-			val  = jItem["rmse_pixel"];
-            cout << "param::rmse_pixel is: " << val << endl;
 		}
 
 		if (item.contains("image")) {
 			std::string imgNameStr = item["image"];
 			int id = item["id"];
+
+			vector<int> res = item["resolution"].get<vector<int>>();	// Get array from json
 			cout << "Image id:" << id << ": " << imgNameStr << endl;
+			cout << "Res: " << res[0] << ", " << res[1] << endl;
         }
     }
 }
